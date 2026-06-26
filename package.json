@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "cross-env VITE_BASE=/dosa-site/ intent-build || cross-env VITE_BASE=/dosa-site/ npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npx cross-env VITE_BASE=/dosa-site/ npm run build",
+    "deploy": "npx gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
