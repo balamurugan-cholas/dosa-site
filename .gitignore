@@ -1,0 +1,27 @@
+# Dependencies matrix
+node_modules/
+.pnpm-store/
+
+# Production build outputs
+dist/
+build/
+
+# Local configuration environment variables
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# IDE configurations and editor project files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Operating system system logging configurations
+.DS_Store
+Thumbs.db
