@@ -28,7 +28,7 @@ export default function DownloadCTA() {
         {/* Stark Box Shaped Sharp-Corner Download Button - Converted to Orange Theme */}
         <div className="mb-12">
           <a
-            href="https://github.com/balamurugan-cholas/Dosa/releases/download/0.0.1/Dosa.Setup.0.0.1.exe"
+            href="https://github.com/balamurugan-cholas/Dosa/releases/download/0.0.2/Dosa.Setup.0.0.2.exe"
             className="group inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-orange-500 text-black hover:bg-orange-400 text-xs font-black uppercase tracking-widest px-8 py-4 rounded-none transition-all duration-200 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]"
           >
             <Download size={14} strokeWidth={3} className="text-black transition-transform duration-200 group-hover:translate-y-[-1px]" />

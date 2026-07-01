@@ -63,9 +63,7 @@ export default function FreeForever() {
                   >
                     {name}
                   </div>
-                  <span className="text-[9px] text-white/30 tracking-widest uppercase">
-                    API CORE
-                  </span>
+    
                 </div>
                 
                 {/* Structural Functional Role */}

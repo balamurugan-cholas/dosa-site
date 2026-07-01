@@ -49,7 +49,7 @@ function Navbar() {
         >
           DOSA
         </span>
-        <a href="https://github.com/balamurugan-cholas/Dosa/releases/download/0.0.1/Dosa.Setup.0.0.1.exe" className="group inline-flex items-center justify-center gap-2 text-white/70 hover:text-orange-500 text-xs font-black uppercase tracking-widest p-2 sm:p-0 transition-colors duration-200" >
+        <a href="https://github.com/balamurugan-cholas/Dosa/releases/download/0.0.2/Dosa.Setup.0.0.2.exe" className="group inline-flex items-center justify-center gap-2 text-white/70 hover:text-orange-500 text-xs font-black uppercase tracking-widest p-2 sm:p-0 transition-colors duration-200" >
           <Download size={14} strokeWidth={3} className="transition-transform duration-200 group-hover:translate-y-[-1px]" />
           <span className="hidden sm:inline">Download</span>
         </a>
@@ -100,7 +100,7 @@ export default function Hero() {
 
             {/* Stark Actions: Orange Hover Action Box */}
             <div className="flex flex-row items-center">
-              <a href="https://github.com/balamurugan-cholas/Dosa/releases/download/0.0.1/Dosa.Setup.0.0.1.exe" className="group inline-flex items-center justify-center gap-2 bg-orange-500 text-black hover:bg-orange-400 text-xs font-black uppercase tracking-widest px-5 py-3 rounded-none transition-colors duration-200" >
+              <a href="https://github.com/balamurugan-cholas/Dosa/releases/download/0.0.2/Dosa.Setup.0.0.2.exe" className="group inline-flex items-center justify-center gap-2 bg-orange-500 text-black hover:bg-orange-400 text-xs font-black uppercase tracking-widest px-5 py-3 rounded-none transition-colors duration-200" >
                 <Download size={14} strokeWidth={3} className="text-black transition-transform duration-200 group-hover:translate-y-[-1px]" />
                 <span>Download Now</span>
               </a>
