@@ -1,6 +1,7 @@
 "use client";
+
 import { useEffect, useState } from "react";
-import { Download } from "lucide-react";
+import { Download, Terminal } from "lucide-react"; // Imported Terminal icon for VS Code
 import AppMockup from "./AppMockup";
 
 // Define the type for the AudioStatus component props
@@ -44,12 +45,10 @@ function Navbar() {
     }`}
     >
       <div className="max-w-[1200px] mx-auto px-6 min-h-16 flex flex-row items-center justify-between">
-        <span className="text-orange-500 text-xl font-black tracking-tighter uppercase transition-transform duration-200 active:scale-95 cursor-pointer"
-          style={{ fontFamily: '"Arial Black", "Impact", "Inter", sans-serif' }}
-        >
+        <span className="text-orange-500 text-xl font-black tracking-tighter uppercase transition-transform duration-200 active:scale-95 cursor-pointer" style={{ fontFamily: '"Arial Black", "Impact", "Inter", sans-serif' }} >
           DOSA
         </span>
-        <a href="https://github.com/balamurugan-cholas/Dosa/releases/download/0.0.3/Dosa.Setup.0.0.3.exe" className="group inline-flex items-center justify-center gap-2 text-white/70 hover:text-orange-500 text-xs font-black uppercase tracking-widest p-2 sm:p-0 transition-colors duration-200" >
+        <a href="https://github.com/balamurugan-cholas/Dosa/releases/download/0.0.4/Dosa.Setup.0.0.4.exe" className="group inline-flex items-center justify-center gap-2 text-white/70 hover:text-orange-500 text-xs font-black uppercase tracking-widest p-2 sm:p-0 transition-colors duration-200" >
           <Download size={14} strokeWidth={3} className="transition-transform duration-200 group-hover:translate-y-[-1px]" />
           <span className="hidden sm:inline">Download</span>
         </a>
@@ -73,13 +72,12 @@ export default function Hero() {
 
   return (
     <div className="bg-[#0a0a0a] min-h-screen text-white overflow-x-hidden relative">
-      
       {/* Smooth Background Animation Blur */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-orange-600/10 rounded-full blur-[80px] sm:blur-[130px] animate-pulse pointer-events-none duration-[8000s] mix-blend-screen" />
       <div className="absolute top-1/3 left-1/3 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] bg-orange-500/5 rounded-full blur-[60px] sm:blur-[100px] animate-ping pointer-events-none [animation-duration:12s] mix-blend-screen" />
 
       <Navbar />
-      
+
       <section className="pt-32 sm:pt-44 pb-20 sm:pb-32 px-6 relative z-10">
         <div className="max-w-[1200px] mx-auto">
           <div className="max-w-[800px]">
@@ -87,9 +85,7 @@ export default function Hero() {
             <AudioStatus isAnswering={isAnswering} />
 
             {/* Bold Brutalist Typography */}
-            <h1 className="text-[clamp(2.5rem,7vw,4.75rem)] font-black text-white leading-[1.02] tracking-tighter uppercase mb-6 sm:mb-8"
-              style={{ fontFamily: '"Arial Black", "Impact", "Inter", sans-serif' }}
-            >
+            <h1 className="text-[clamp(2.5rem,7vw,4.75rem)] font-black text-white leading-[1.02] tracking-tighter uppercase mb-6 sm:mb-8" style={{ fontFamily: '"Arial Black", "Impact", "Inter", sans-serif' }} >
               Your AI interview<br />companion. Invisible<br />to everyone else.
             </h1>
 
@@ -98,11 +94,24 @@ export default function Hero() {
               Live transcription, instant AI answers, screen analysis — all hidden from screen share. Compete at the highest level, quietly.
             </p>
 
-            {/* Stark Actions: Orange Hover Action Box */}
-            <div className="flex flex-row items-center">
-              <a href="https://github.com/balamurugan-cholas/Dosa/releases/download/0.0.3/Dosa.Setup.0.0.3.exe" className="group inline-flex items-center justify-center gap-2 bg-orange-500 text-black hover:bg-orange-400 text-xs font-black uppercase tracking-widest px-5 py-3 rounded-none transition-colors duration-200" >
+            {/* Stark Actions: Dual Action Buttons */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              {/* Primary: Download Desktop App */}
+              <a 
+                href="https://github.com/balamurugan-cholas/Dosa/releases/download/0.0.4/Dosa.Setup.0.0.4.exe" 
+                className="group inline-flex items-center justify-center gap-2 bg-orange-500 text-black hover:bg-orange-400 text-xs font-black uppercase tracking-widest px-6 py-4 rounded-none transition-colors duration-200"
+              >
                 <Download size={14} strokeWidth={3} className="text-black transition-transform duration-200 group-hover:translate-y-[-1px]" />
-                <span>Download Now</span>
+                <span>Download App</span>
+              </a>
+
+              {/* Secondary: VS Code Extension */}
+              <a 
+                href="https://github.com/balamurugan-cholas/Dosa/releases/download/0.0.4/vscode-dosa-bridge-0.1.0.vsix" // Replace with your actual VS Code Marketplace URL
+                className="group inline-flex items-center justify-center gap-2 bg-transparent text-white border border-white/20 hover:border-orange-500/50 hover:text-orange-500 text-xs font-black uppercase tracking-widest px-6 py-4 rounded-none transition-colors duration-200"
+              >
+                <Terminal size={14} strokeWidth={3} className="transition-transform duration-200 group-hover:rotate-6" />
+                <span>VS Code Extension</span>
               </a>
             </div>
           </div>
