@@ -91,7 +91,7 @@ export default function Hero() {
 
             {/* Clean High-Contrast Body */}
             <p className="text-sm sm:text-base text-white/60 leading-relaxed tracking-wide mb-10 sm:mb-12 max-w-[540px]">
-              Live transcription, instant AI answers, screen analysis — all hidden from screen share. Compete at the highest level, quietly.
+              Live transcription, instant AI answers, screen analysis - all hidden from screen share. Compete at the highest level, quietly.
             </p>
 
             {/* Stark Actions: Dual Action Buttons */}
